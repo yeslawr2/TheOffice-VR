@@ -792,9 +792,21 @@
       <Project>{343000E0-9E55-5CDF-4B2E-DE9E59D15DCD}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.csproj">
+      <Project>{740F196D-6769-742E-88E2-94297AC560B9}</Project>
+      <Name>Unity.ProBuilder</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
       <Project>{1D8B2F24-6E91-5FDB-8D2D-E867690DB259}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
+      <Project>{E689FE84-5AFD-839A-C4AD-8DA2EC666610}</Project>
+      <Name>Unity.ProBuilder.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
+      <Project>{4D07047F-AE7F-682D-CCDF-4724777F1B12}</Project>
+      <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{077691E4-09D8-DDC6-3EB4-63A5EBB4EBA0}</Project>
@@ -824,6 +836,10 @@
       <Project>{E3116AD3-5FBF-8134-A272-9C32FED04A29}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
+      <Project>{FB777482-0463-60DB-796E-48D59D0AC986}</Project>
+      <Name>Unity.ProBuilder.AddOns.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
       <Project>{AB15C635-EDA8-2020-0F15-FEA675274B97}</Project>
       <Name>PhotonChat</Name>
@@ -843,22 +859,6 @@
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{7AEF630F-692A-7FA5-4234-7DE1D68AEE6D}</Project>
       <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.csproj">
-      <Project>{740F196D-6769-742E-88E2-94297AC560B9}</Project>
-      <Name>Unity.ProBuilder</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
-      <Project>{E689FE84-5AFD-839A-C4AD-8DA2EC666610}</Project>
-      <Name>Unity.ProBuilder.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
-      <Project>{4D07047F-AE7F-682D-CCDF-4724777F1B12}</Project>
-      <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
-      <Project>{FB777482-0463-60DB-796E-48D59D0AC986}</Project>
-      <Name>Unity.ProBuilder.AddOns.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
