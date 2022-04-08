@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class ChairController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ChairController : MonoBehaviour
     private Canvas thisChairMenu;
     private Outline outlineComponent;
     private ChairMenuController menuControllerComponent;
+    private PhotonView pvComponent;
 
     private float maxMoveDistance;
     private float maxRotateDistance;
@@ -24,6 +26,7 @@ public class ChairController : MonoBehaviour
 
         outlineComponent = gameObject.GetComponent<Outline>();
         menuControllerComponent = thisChairMenu.gameObject.GetComponent<ChairMenuController>();
+        pvComponent = GetComponent<PhotonView>();
 
         maxMoveDistance = 1.0f;
         maxRotateDistance = 30.0f;
@@ -38,12 +41,12 @@ public class ChairController : MonoBehaviour
     {
         if (outlineComponent.enabled)
         {
-            if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKeyDown(KeyCode.K) || Input.GetButtonDown("js0"))
             {
                 thisChairMenu.gameObject.SetActive(!thisChairMenu.gameObject.activeInHierarchy);
             }
 
-            if (Input.GetKey(KeyCode.L))
+            if (Input.GetKey(KeyCode.L) || Input.GetButton("js5"))
             {
                 if (menuControllerComponent.IsMoveMode())
                 {
@@ -51,7 +54,8 @@ public class ChairController : MonoBehaviour
                     {
                         if (currentMoveDistance > 0)
                         {
-                            gameObject.transform.Translate(0.0f, 0.0f, -0.01f);
+                            //gameObject.transform.Translate(0.0f, 0.0f, -0.01f);
+                            MoveChair(-0.01f);
                             currentMoveDistance -= 0.01f;
                         }
                     }
@@ -59,7 +63,8 @@ public class ChairController : MonoBehaviour
                     {
                         if (currentMoveDistance < maxMoveDistance)
                         {
-                            gameObject.transform.Translate(0.0f, 0.0f, 0.01f);
+                            //gameObject.transform.Translate(0.0f, 0.0f, 0.01f);
+                            MoveChair(0.01f);
                             currentMoveDistance += 0.01f;
                         }
                     }
@@ -85,5 +90,21 @@ public class ChairController : MonoBehaviour
                 }
             }
         }
+    }
+
+    void MoveChair(float distance)
+    {
+        pvComponent.RPC("RPC_MoveChair", RpcTarget.All, distance);
+    }
+
+    void RotateChair(float angle)
+    {
+
+    }
+
+    [PunRPC]
+    void RPC_MoveChair(float distance)
+    {
+        gameObject.transform.Translate(0.0f, 0.0f, distance);
     }
 }

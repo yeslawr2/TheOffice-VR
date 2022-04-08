@@ -28,7 +28,7 @@ public class ReserveRoomButton : MonoBehaviour
     {
         if (outlineComponent.enabled)
         {
-            if (Input.GetKeyDown(KeyCode.L))
+            if (Input.GetKeyDown(KeyCode.L) || Input.GetButtonDown("js5"))
             {
                 reserveRoomMenu.gameObject.SetActive(!reserveRoomMenu.gameObject.activeInHierarchy);
             }

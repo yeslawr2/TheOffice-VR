@@ -19,7 +19,7 @@ public class ShareScreenButton : MonoBehaviour
     {
         if (outlineComponent.enabled)
         {
-            if (Input.GetKeyDown(KeyCode.L))
+            if (Input.GetKeyDown(KeyCode.L) || Input.GetButtonDown("js5"))
             {
                 shareScreenMenu.gameObject.SetActive(!shareScreenMenu.gameObject.activeInHierarchy);
             }
