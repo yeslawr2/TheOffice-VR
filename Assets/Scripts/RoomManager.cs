@@ -33,7 +33,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        if (scene.name == "Scene1")
+        if (scene.name == "Spawn-room" || scene.name == "Hallway" || scene.name == "Scene1" || scene.name == "officecabin" || scene.name == "C room")
         {
             PhotonNetwork.Instantiate("PlayerManager", Vector3.zero, Quaternion.identity);
         }

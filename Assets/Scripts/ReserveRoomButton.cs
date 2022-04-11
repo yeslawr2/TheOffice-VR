@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class ReserveRoomButton : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class ReserveRoomButton : MonoBehaviour
     {
         if (outlineComponent.enabled)
         {
-            if (Input.GetKeyDown(KeyCode.L) || Input.GetButtonDown("js5"))
+            if (Input.GetKeyDown(KeyCode.K) || Input.GetButtonDown("js0"))
             {
                 reserveRoomMenu.gameObject.SetActive(!reserveRoomMenu.gameObject.activeInHierarchy);
             }
@@ -36,10 +37,12 @@ public class ReserveRoomButton : MonoBehaviour
 
         if (reserveRoomMenuController.IsRoomReserved())
         {
+            // Use a RPC for this later
             rendererComponent.material.color = Color.red;
         }
         else
         {
+            // Use a RPC for this later
             rendererComponent.material.color = Color.green;
         }
     }

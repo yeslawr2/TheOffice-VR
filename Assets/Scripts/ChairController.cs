@@ -21,14 +21,14 @@ public class ChairController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        thisChairMenu = Instantiate(originalChairMenu, new Vector3(transform.position.x + 0.35f, transform.position.y + 1.39f, transform.position.z), originalChairMenu.transform.rotation);
+        thisChairMenu = Instantiate(originalChairMenu, new Vector3(transform.position.x + 0.35f, transform.position.y + 4.26f, transform.position.z), originalChairMenu.transform.rotation);
         thisChairMenu.gameObject.SetActive(false);
 
         outlineComponent = gameObject.GetComponent<Outline>();
         menuControllerComponent = thisChairMenu.gameObject.GetComponent<ChairMenuController>();
         pvComponent = GetComponent<PhotonView>();
 
-        maxMoveDistance = 1.0f;
+        maxMoveDistance = 4.0f;
         maxRotateDistance = 30.0f;
         minRotateDistance = -30.0f;
 
@@ -55,8 +55,8 @@ public class ChairController : MonoBehaviour
                         if (currentMoveDistance > 0)
                         {
                             //gameObject.transform.Translate(0.0f, 0.0f, -0.01f);
-                            MoveChair(-0.01f);
-                            currentMoveDistance -= 0.01f;
+                            MoveChair(-0.05f);
+                            currentMoveDistance -= 0.05f;
                         }
                     }
                     else
@@ -64,8 +64,8 @@ public class ChairController : MonoBehaviour
                         if (currentMoveDistance < maxMoveDistance)
                         {
                             //gameObject.transform.Translate(0.0f, 0.0f, 0.01f);
-                            MoveChair(0.01f);
-                            currentMoveDistance += 0.01f;
+                            MoveChair(0.05f);
+                            currentMoveDistance += 0.05f;
                         }
                     }
                 }
