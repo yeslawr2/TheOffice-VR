@@ -799,6 +799,7 @@
     <Compile Include="Assets\Scripts\SofaController.cs" />
     <Compile Include="Assets\Scripts\SofaMenuController.cs" />
     <Compile Include="Assets\Scripts\SpawnPlayers.cs" />
+    <Compile Include="Assets\Scripts\SpawnRoomDoor.cs" />
     <Compile Include="Assets\levelloader.cs" />
   </ItemGroup>
   <ItemGroup>

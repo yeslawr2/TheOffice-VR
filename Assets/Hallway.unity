@@ -356,6 +356,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 84944391}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &84944393 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2535999850614985098, guid: 3ad9d0f9b84ed8d47b0dc61cf79688f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 84944391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &106356823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -581,6 +587,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 106356823}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &106356825 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2535999850614985098, guid: 3ad9d0f9b84ed8d47b0dc61cf79688f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 106356823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &124635068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -670,6 +682,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10b8ae28db1fbd4ca4ab45c4f912d03, type: 3}
+--- !u!1 &124635069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5093701920811687482, guid: e10b8ae28db1fbd4ca4ab45c4f912d03,
+    type: 3}
+  m_PrefabInstance: {fileID: 124635068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &124635070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124635069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabe29b04d8ceb7429919b5a7884f0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterRoomMenu: {fileID: 480303866}
+--- !u!114 &124635071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124635069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 124635072}
+          m_MethodName: turnOnOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 124635072}
+          m_MethodName: turnOffOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &124635072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124635069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9ae7b2cebeb434381dbe3a834ac345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &124635073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124635069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &227962072
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,7 +872,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38132
+  m_Name: pb_Mesh-164988
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1014,6 +1118,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10b8ae28db1fbd4ca4ab45c4f912d03, type: 3}
+--- !u!1 &444532845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5093701920811687482, guid: e10b8ae28db1fbd4ca4ab45c4f912d03,
+    type: 3}
+  m_PrefabInstance: {fileID: 444532844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &444532846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444532845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabe29b04d8ceb7429919b5a7884f0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterRoomMenu: {fileID: 1459644058}
+--- !u!114 &444532847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444532845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 444532848}
+          m_MethodName: turnOnOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 444532848}
+          m_MethodName: turnOffOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &444532848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444532845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9ae7b2cebeb434381dbe3a834ac345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &444532849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444532845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &480303864
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1224,6 +1420,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 480303864}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &480303866 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2535999850614985098, guid: 3ad9d0f9b84ed8d47b0dc61cf79688f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 480303864}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &492616856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1348,13 +1550,19 @@ PrefabInstance:
       objectReference: {fileID: 1173187061}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ad9d0f9b84ed8d47b0dc61cf79688f1, type: 3}
+--- !u!223 &492616857 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2535999850614985098, guid: 3ad9d0f9b84ed8d47b0dc61cf79688f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 492616856}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &577864704
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38480
+  m_Name: pb_Mesh-165336
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4369,6 +4577,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10b8ae28db1fbd4ca4ab45c4f912d03, type: 3}
+--- !u!1 &695757255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5093701920811687482, guid: e10b8ae28db1fbd4ca4ab45c4f912d03,
+    type: 3}
+  m_PrefabInstance: {fileID: 695757254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &695757256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695757255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabe29b04d8ceb7429919b5a7884f0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterRoomMenu: {fileID: 804837369}
+--- !u!114 &695757257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695757255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 695757258}
+          m_MethodName: turnOnOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 695757258}
+          m_MethodName: turnOffOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &695757258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695757255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9ae7b2cebeb434381dbe3a834ac345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &695757259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695757255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!43 &720343225
 Mesh:
   m_ObjectHideFlags: 0
@@ -4846,6 +5146,12 @@ PrefabInstance:
 --- !u!1 &804837368 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1176846093120327287, guid: 3ad9d0f9b84ed8d47b0dc61cf79688f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 804837367}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &804837369 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2535999850614985098, guid: 3ad9d0f9b84ed8d47b0dc61cf79688f1,
     type: 3}
   m_PrefabInstance: {fileID: 804837367}
   m_PrefabAsset: {fileID: 0}
@@ -5878,13 +6184,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1459644056}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &1459644058 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2535999850614985098, guid: 3ad9d0f9b84ed8d47b0dc61cf79688f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1459644056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1557017006
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38284
+  m_Name: pb_Mesh86670
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6242,7 +6554,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38110
+  m_Name: pb_Mesh-164966
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6488,6 +6800,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10b8ae28db1fbd4ca4ab45c4f912d03, type: 3}
+--- !u!1 &1732365214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5093701920811687482, guid: e10b8ae28db1fbd4ca4ab45c4f912d03,
+    type: 3}
+  m_PrefabInstance: {fileID: 1732365213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1732365215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732365214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabe29b04d8ceb7429919b5a7884f0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterRoomMenu: {fileID: 106356825}
+--- !u!114 &1732365216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732365214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1732365217}
+          m_MethodName: turnOnOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1732365217}
+          m_MethodName: turnOffOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1732365217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732365214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9ae7b2cebeb434381dbe3a834ac345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1732365218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732365214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1821656583
 GameObject:
   m_ObjectHideFlags: 0
@@ -6669,13 +7073,105 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10b8ae28db1fbd4ca4ab45c4f912d03, type: 3}
+--- !u!1 &1854222482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5093701920811687482, guid: e10b8ae28db1fbd4ca4ab45c4f912d03,
+    type: 3}
+  m_PrefabInstance: {fileID: 1854222481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1854222483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854222482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabe29b04d8ceb7429919b5a7884f0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterRoomMenu: {fileID: 492616857}
+--- !u!114 &1854222484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854222482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1854222485}
+          m_MethodName: turnOnOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1854222485}
+          m_MethodName: turnOffOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1854222485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854222482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9ae7b2cebeb434381dbe3a834ac345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1854222486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854222482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!43 &2123597053
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38502
+  m_Name: pb_Mesh-165358
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6921,13 +7417,105 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10b8ae28db1fbd4ca4ab45c4f912d03, type: 3}
+--- !u!1 &2129574138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5093701920811687482, guid: e10b8ae28db1fbd4ca4ab45c4f912d03,
+    type: 3}
+  m_PrefabInstance: {fileID: 2129574137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2129574139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129574138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eabe29b04d8ceb7429919b5a7884f0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterRoomMenu: {fileID: 84944393}
+--- !u!114 &2129574140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129574138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2129574141}
+          m_MethodName: turnOnOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2129574141}
+          m_MethodName: turnOffOutline
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2129574141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129574138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9ae7b2cebeb434381dbe3a834ac345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2129574142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129574138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!43 &2141080576
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-38458
+  m_Name: pb_Mesh-165314
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
