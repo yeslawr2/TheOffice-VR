@@ -644,11 +644,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Character.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\Door.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\DoorAction.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\Fix_elevator_fall.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\evelator_controll.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\pass_on_parent.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoObjectController6DoF.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoSeeThroughController.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerInput.cs" />

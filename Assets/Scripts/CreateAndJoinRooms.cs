@@ -24,16 +24,16 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
     public void CreateRoom()
     {
-        PhotonNetwork.CreateRoom("a");
+        PhotonNetwork.CreateRoom("b");
     }
 
     public void JoinRoom()
     {
-        PhotonNetwork.JoinRoom("a");
+        PhotonNetwork.JoinRoom("b");
     }
 
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("Spawn-room");
+        PhotonNetwork.LoadLevel("CombinedRooms");
     }
 }

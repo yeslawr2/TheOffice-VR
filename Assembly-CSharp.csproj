@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4321C40A-8BC6-B74D-3E0B-92BBBC5527C5}</ProjectGuid>
+    <ProjectGuid>{466F30BF-34FD-671C-9B5A-85500BED5797}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -65,11 +65,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Character.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\Door.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\DoorAction.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\Fix_elevator_fall.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\evelator_controll.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\pass_on_parent.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoObjectController6DoF.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoSeeThroughController.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerInput.cs" />
@@ -448,13 +443,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -819,83 +814,83 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{BC02951F-BAC5-CE90-15B2-CCFB53E7985B}</Project>
+      <Project>{BA5643F7-1284-45F9-3C18-58419EECD9C9}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{CC843C5B-8AD2-F751-7406-61041B430C04}</Project>
+      <Project>{D8310C9B-1778-E743-0F91-9CCE66A9DAE3}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{343000E0-9E55-5CDF-4B2E-DE9E59D15DCD}</Project>
+      <Project>{DBAA27EF-C648-9659-0203-D5BD99AB5FE6}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.csproj">
-      <Project>{740F196D-6769-742E-88E2-94297AC560B9}</Project>
+      <Project>{2FC0BE79-8859-7428-9A5E-BAD2C1A4E428}</Project>
       <Name>Unity.ProBuilder</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{1D8B2F24-6E91-5FDB-8D2D-E867690DB259}</Project>
+      <Project>{8DB1658F-CAF0-57DC-2354-3B8DF228A60E}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
-      <Project>{E689FE84-5AFD-839A-C4AD-8DA2EC666610}</Project>
+      <Project>{81A7974B-76E8-D19F-59BC-D6170FBDB5F9}</Project>
       <Name>Unity.ProBuilder.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
-      <Project>{4D07047F-AE7F-682D-CCDF-4724777F1B12}</Project>
+      <Project>{681208A0-A519-6136-F695-D71ACD3CCA99}</Project>
       <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{077691E4-09D8-DDC6-3EB4-63A5EBB4EBA0}</Project>
+      <Project>{48850C66-B66B-101C-9265-299816F36E61}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E0616E1-7C11-7378-B813-644CC6470F7B}</Project>
+      <Project>{2B0EF369-A0E7-81E7-A478-61A7968A2176}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{DA115F9D-1E00-42F1-DD42-0F2A4BFCDDE4}</Project>
+      <Project>{6CE4230E-9FF0-0676-29A7-38400B297BC7}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
-      <Project>{3DDB0A99-9F1F-EE74-11AA-C4A6148163D3}</Project>
+      <Project>{BC21CAD7-618A-BFF2-307D-A7638A268BBC}</Project>
       <Name>Unity.CollabProxy.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{BD23676A-94D8-8259-4639-1540DC5697EF}</Project>
+      <Project>{38F85CBC-625D-7EBC-B82F-125F07F6B824}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{B92D90D1-BFE5-0113-658C-19D7A3248C27}</Project>
+      <Project>{226769ED-FBBB-0EAC-8E10-7286A4070DCD}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{E3116AD3-5FBF-8134-A272-9C32FED04A29}</Project>
+      <Project>{32A76E33-A0E8-AC05-1F0D-C0979780ED96}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
-      <Project>{FB777482-0463-60DB-796E-48D59D0AC986}</Project>
+      <Project>{6A1D0389-A813-4038-C710-FEF4B25763CD}</Project>
       <Name>Unity.ProBuilder.AddOns.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{AB15C635-EDA8-2020-0F15-FEA675274B97}</Project>
+      <Project>{88B57C96-FC6F-F4D0-348B-770F068DDE07}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{A595D5B2-6E17-C55E-955D-9BB8C1FA0966}</Project>
+      <Project>{03CE94B1-2E71-E727-6621-98B8C571F25C}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{B850DE70-513B-A6B6-3BB5-116D56EE198F}</Project>
+      <Project>{8B31590F-8046-1EA4-F96A-FC78C8A08C94}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{76741889-5982-FB49-B67F-F6140F249D97}</Project>
+      <Project>{414C409D-8991-6E61-F935-93FDF3E9EDB6}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{7AEF630F-692A-7FA5-4234-7DE1D68AEE6D}</Project>
+      <Project>{38E85BE5-79EC-4F1A-183E-663AF344BE9E}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>

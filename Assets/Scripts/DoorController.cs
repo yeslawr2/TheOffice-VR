@@ -7,9 +7,11 @@ public class DoorController : MonoBehaviour
     //[SerializeField] private Transform doorPivot;
     [SerializeField] private GameObject doorWing;
     [SerializeField] private Canvas doorMenu;
+    [SerializeField] private Canvas exitMenu;
 
     private Outline outlineComponent;
     private DoorMenuController doorMenuController;
+    private DoorMenuController exitMenuController;
 
     private float minRotateDistance = 0.0f;
     private float maxRotateDistance = 90.0f;
@@ -23,6 +25,7 @@ public class DoorController : MonoBehaviour
         outlineComponent.enabled = false;
 
         doorMenuController = doorMenu.GetComponent<DoorMenuController>();
+        exitMenuController = exitMenu.GetComponent<DoorMenuController>();
 
         currentRotateDistance = 0.0f;
     }
@@ -35,11 +38,13 @@ public class DoorController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.K) || Input.GetButtonDown("js0"))
             {
                 doorMenu.gameObject.SetActive(!doorMenu.gameObject.activeInHierarchy);
+                exitMenu.gameObject.SetActive(!exitMenu.gameObject.activeInHierarchy);
             }
 
             if (Input.GetKey(KeyCode.L) || Input.GetButton("js5"))
             {
-                if (doorMenuController.GetCurrentMode() == DoorMenuController.DoorMode.PUSH_DOOR)
+                if (doorMenuController.GetCurrentMode() == DoorMenuController.DoorMode.PUSH_DOOR
+                    || exitMenuController.GetCurrentMode() == DoorMenuController.DoorMode.PUSH_DOOR)
                 {
                     if (currentRotateDistance < maxRotateDistance)
                     {
@@ -47,7 +52,8 @@ public class DoorController : MonoBehaviour
                         currentRotateDistance += 1.0f;
                     }
                 }
-                else if (doorMenuController.GetCurrentMode() == DoorMenuController.DoorMode.PULL_DOOR)
+                else if (doorMenuController.GetCurrentMode() == DoorMenuController.DoorMode.PULL_DOOR
+                    || exitMenuController.GetCurrentMode() == DoorMenuController.DoorMode.PULL_DOOR)
                 {
                     if (currentRotateDistance > minRotateDistance)
                     {

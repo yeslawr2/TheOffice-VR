@@ -345,7 +345,7 @@ RectTransform:
   m_GameObject: {fileID: 4356315860179094264}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: -6.26}
-  m_LocalScale: {x: 1.4780993, y: 3.438968, z: 5.5066657}
+  m_LocalScale: {x: 1.4780992, y: 3.438968, z: 5.506665}
   m_Children:
   - {fileID: 4356315859557090787}
   - {fileID: 4356315860414678282}
@@ -375,7 +375,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -430,9 +430,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d4db2cdfa19bf4da90cc04f0861afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushDoorButton: {fileID: 4356315859557090716}
-  pullDoorButton: {fileID: 4356315860414678283}
+  openDoorButton: {fileID: 4356315860414678283}
+  closeDoorButton: {fileID: 4356315859557090716}
   noneButton: {fileID: 4356315859430529233}
+  otherDoorMenu: {fileID: 0}
 --- !u!1 &4356315860414678281
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pull Door
+  m_Text: Open Door
 --- !u!1 &4356315860931172591
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,4 +708,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Push Door
+  m_Text: Close Door

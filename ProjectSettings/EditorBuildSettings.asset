@@ -18,12 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/officecabin.unity
     guid: f6ac083086b0645f889cb4a801891ac9
   - enabled: 1
-    path: Assets/Spawn-room.unity
+    path: Assets/Scenes/Spawn-room.unity
     guid: 3aa8a8517b344934bad85a592d3da91e
   - enabled: 1
-    path: Assets/Hallway.unity
+    path: Assets/Scenes/Hallway.unity
     guid: 1777582f9254f4942a33e9cc4599c7aa
   - enabled: 1
-    path: Assets/C room.unity
+    path: Assets/Scenes/C room.unity
     guid: 654aefefc7b0e4df0890141138ff0a51
+  - enabled: 1
+    path: Assets/Scenes/CombinedRooms.unity
+    guid: 61f355b953d851042837faa78f44d4a0
   m_configObjects: {}
