@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{76741889-5982-FB49-B67F-F6140F249D97}</ProjectGuid>
+    <ProjectGuid>{414C409D-8991-6E61-F935-93FDF3E9EDB6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PhotonUnityNetworking.Editor</AssemblyName>
@@ -282,16 +282,16 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -656,27 +656,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{BD23676A-94D8-8259-4639-1540DC5697EF}</Project>
+      <Project>{38F85CBC-625D-7EBC-B82F-125F07F6B824}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{E3116AD3-5FBF-8134-A272-9C32FED04A29}</Project>
+      <Project>{32A76E33-A0E8-AC05-1F0D-C0979780ED96}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{7AEF630F-692A-7FA5-4234-7DE1D68AEE6D}</Project>
+      <Project>{38E85BE5-79EC-4F1A-183E-663AF344BE9E}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E0616E1-7C11-7378-B813-644CC6470F7B}</Project>
+      <Project>{2B0EF369-A0E7-81E7-A478-61A7968A2176}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{E5CCB02D-03BC-B618-3B5F-9E78860FCFC0}</Project>
+      <Project>{011806A9-D793-E0C4-5152-ED779D2B1482}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{DBCEB460-F057-CD83-3F08-247072A60A98}</Project>
+      <Project>{253E5E0B-8006-6F47-3F18-175BA49B10D8}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

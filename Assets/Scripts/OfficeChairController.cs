@@ -57,7 +57,8 @@ public class OfficeChairController : MonoBehaviour
                         {
                             //gameObject.transform.Translate(0.0f, 0.0f, -0.01f);
                             MoveChair(forwardDistance);
-                            currentMoveDistance -= forwardDistance;
+                            //currentMoveDistance -= forwardDistance;
+                            UpdateMoveDistance(-forwardDistance);
                         }
                     }
                     else
@@ -66,7 +67,8 @@ public class OfficeChairController : MonoBehaviour
                         {
                             //gameObject.transform.Translate(0.0f, 0.0f, 0.01f);
                             MoveChair(backwardDistance);
-                            currentMoveDistance += forwardDistance;
+                            //currentMoveDistance += forwardDistance;
+                            UpdateMoveDistance(forwardDistance);
                         }
                     }
                 }
@@ -76,16 +78,20 @@ public class OfficeChairController : MonoBehaviour
                     {
                         if (currentRotateDistance > minRotateDistance)
                         {
-                            gameObject.transform.Rotate(0.0f, 0.5f, 0.0f);
-                            currentRotateDistance -= 0.5f;
+                            //gameObject.transform.Rotate(0.0f, 0.5f, 0.0f);
+                            RotateChair(0.5f);
+                            //currentRotateDistance -= 0.5f;
+                            UpdateRotateDistance(-0.5f);
                         }
                     }
                     else
                     {
                         if (currentRotateDistance < maxRotateDistance)
                         {
-                            gameObject.transform.Rotate(0.0f, -0.5f, 0.0f);
-                            currentRotateDistance += 0.5f;
+                            //gameObject.transform.Rotate(0.0f, -0.5f, 0.0f);
+                            RotateChair(-0.5f);
+                            //currentRotateDistance += 0.5f;
+                            UpdateRotateDistance(0.5f);
                         }
                     }
                 }
@@ -98,9 +104,42 @@ public class OfficeChairController : MonoBehaviour
         pvComponent.RPC("RPC_MoveChair", RpcTarget.All, distance);
     }
 
+    void RotateChair(float angle)
+    {
+        pvComponent.RPC("RPC_RotateChair", RpcTarget.All, angle);
+    }
+
+    void UpdateMoveDistance(float distance)
+    {
+        pvComponent.RPC("RPC_UpdateMoveDistance", RpcTarget.All, distance);
+    }
+
+    void UpdateRotateDistance(float angle)
+    {
+        pvComponent.RPC("RPC_UpdateRotateDistance", RpcTarget.All, angle);
+    }
+
     [PunRPC]
     void RPC_MoveChair(float distance)
     {
         gameObject.transform.Translate(0.0f, 0.0f, distance);
+    }
+
+    [PunRPC]
+    void RPC_RotateChair(float angle)
+    {
+        gameObject.transform.Rotate(0.0f, angle, 0.0f);
+    }
+
+    [PunRPC]
+    void RPC_UpdateMoveDistance(float distance)
+    {
+        currentMoveDistance += distance;
+    }
+
+    [PunRPC]
+    void RPC_UpdateRotateDistance(float angle)
+    {
+        currentRotateDistance += angle;
     }
 }

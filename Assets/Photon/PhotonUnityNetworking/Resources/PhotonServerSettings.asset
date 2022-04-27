@@ -16,7 +16,7 @@ MonoBehaviour:
     AppIdRealtime: e6a734f2-83e7-4be3-afd2-20f4e3ee90e3
     AppIdFusion: 
     AppIdChat: 
-    AppIdVoice: 
+    AppIdVoice: 60aee9b3-e798-468d-8d72-693cd6c0fca7
     AppVersion: 
     UseNameServer: 1
     FixedRegion: usw
@@ -37,6 +37,14 @@ MonoBehaviour:
   - ClickRpc
   - DestroyRpc
   - RPC_MoveChair
+  - SetRotateDistance
+  - RPC_RotateDoor
+  - RPC_ChangeButtonColor
+  - RPC_RotateChair
+  - RPC_UpdateMoveDistance
+  - RPC_UpdateRotateDistance
+  - CantHearYou
+  - HeresWhy
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
   DevRegionSetOnce: 1
