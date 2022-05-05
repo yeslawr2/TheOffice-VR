@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Photon/PhotonVoice/PhotonVoiceApi/readme.txt.meta
 guid: f106412c93fcc624785b315890df1d1f
 TextScriptImporter:
+========
+guid: bc45562f375e105438d27eded7d73e12
+AssemblyDefinitionImporter:
+>>>>>>>> fc42ac09d33cb26cb980d622a0340a5d459618d5:Assets/Photon/PhotonVoice/Code/PUN/Editor/PhotonVoice.PUN.Editor.asmdef.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

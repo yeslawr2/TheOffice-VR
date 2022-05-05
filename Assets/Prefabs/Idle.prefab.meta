@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/Idle.prefab.meta
 guid: 52e7fd39dc0b03544af232d598acf178
 PrefabImporter:
+========
+guid: ef80233b2cf177b4fb3e47af263e38b7
+TextScriptImporter:
+>>>>>>>> fc42ac09d33cb26cb980d622a0340a5d459618d5:Assets/Photon/PhotonVoice/PhotonVoiceLibs/WebRTC-LICENSE.txt.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

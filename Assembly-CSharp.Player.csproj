@@ -86,6 +86,15 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="PhotonVoice.API">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.API.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.PUN">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.PUN.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/Variations/mono/Managed/UnityEngine.dll</HintPath>
     </Reference>
@@ -304,6 +313,15 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.Editor">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.Utilities.Editor">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.Utilities.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.PUN.Editor">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.PUN.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
       <HintPath>Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Photon/PhotonVoice/Code/UtilityScripts/AudioUtils.meta
 guid: c2a7832ead413484391836cfaa4f0a6b
+========
+guid: e70c6b0e644598b458dbb42ace191228
+>>>>>>>> fc42ac09d33cb26cb980d622a0340a5d459618d5:Assets/Photon/PhotonVoice/Code/UtilityScripts/AudioUtils/CSCore.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

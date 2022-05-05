@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Idle.prefab.meta
 guid: 033755895a687bc48aca744366973d24
 PrefabImporter:
+========
+guid: f106412c93fcc624785b315890df1d1f
+TextScriptImporter:
+>>>>>>>> fc42ac09d33cb26cb980d622a0340a5d459618d5:Assets/Photon/PhotonVoice/PhotonVoiceApi/readme.txt.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

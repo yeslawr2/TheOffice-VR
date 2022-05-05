@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Images.meta
 guid: e104d95cbff658943b50d8dcc31735b5
+========
+guid: b03cb992332a7114992bbea5c28e4f70
+>>>>>>>> fc42ac09d33cb26cb980d622a0340a5d459618d5:Assets/Photon/PhotonVoice/Code/Fusion.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

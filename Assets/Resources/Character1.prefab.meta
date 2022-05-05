@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources/Character1.prefab.meta
 guid: 1ac63115962dd624595c982968912d4b
 PrefabImporter:
+========
+guid: 415d649162855d948bfd44d8c5f1e7a2
+AssemblyDefinitionImporter:
+>>>>>>>> fc42ac09d33cb26cb980d622a0340a5d459618d5:Assets/Photon/PhotonVoice/Code/Fusion/PhotonVoice.Fusion.asmdef.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
