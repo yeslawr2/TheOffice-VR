@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 4435372898182504}
   - component: {fileID: 33914758100394692}
   - component: {fileID: 23273896694247576}
-  - component: {fileID: 64695168960901338}
   - component: {fileID: 8781774035187598294}
+  - component: {fileID: 300492801805027201}
+  - component: {fileID: 5459353368746136677}
+  - component: {fileID: 6307413541223692940}
   m_Layer: 0
   m_Name: Office chair.001
   m_TagString: Untagged
@@ -81,20 +83,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64695168960901338
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1086033161478282}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300092, guid: 18cd780e6948a554a850b2d047ebf8fb, type: 3}
 --- !u!114 &8781774035187598294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,6 +99,45 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!65 &300492801805027201
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086033161478282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.006145968, y: 0.00075408304, z: 0.010657896}
+  m_Center: {x: -0.0012486572, y: -0.0042910087, z: 0.0055415407}
+--- !u!65 &5459353368746136677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086033161478282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0009613615, y: 0.0051141903, z: 0.0075640343}
+  m_Center: {x: -0.0044401884, y: -0.0017849403, z: 0.0039946157}
+--- !u!65 &6307413541223692940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086033161478282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0006216575, y: 0.0054248874, z: 0.007549791}
+  m_Center: {x: 0.0018194645, y: -0.0019321558, z: 0.0039874967}
 --- !u!1 &1949368341988676
 GameObject:
   m_ObjectHideFlags: 0

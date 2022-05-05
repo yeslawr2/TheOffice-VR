@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class DoorMenuController : MonoBehaviour
 {
-    [SerializeField] private Button pushDoorButton;
-    [SerializeField] private Button pullDoorButton;
+    [SerializeField] private Button openDoorButton;
+    [SerializeField] private Button closeDoorButton;
     [SerializeField] private Button noneButton;
 
-    private Image pushDoorButtonImage;
-    private Image pullDoorButtonImage;
+    [SerializeField] private Canvas otherDoorMenu;
+    private DoorMenuController otherDoorMenuController;
+
+    private Image openDoorButtonImage;
+    private Image closeDoorButtonImage;
     private Image noneButtonImage;
 
     private Color defaultColor;
@@ -27,36 +30,41 @@ public class DoorMenuController : MonoBehaviour
     {
         currentDoorMode = DoorMode.NONE;
 
-        pullDoorButton.onClick.AddListener(changeToPullMode);
-        pushDoorButton.onClick.AddListener(changeToPushMode);
+        closeDoorButton.onClick.AddListener(changeToPullMode);
+        openDoorButton.onClick.AddListener(changeToPushMode);
         noneButton.onClick.AddListener(changeToNoneMode);
 
-        pushDoorButtonImage = pushDoorButton.GetComponent<Image>();
-        pullDoorButtonImage = pullDoorButton.GetComponent<Image>();
+        otherDoorMenuController = otherDoorMenu.GetComponent<DoorMenuController>();
+
+        /*
+        openDoorButtonImage = openDoorButton.GetComponent<Image>();
+        closeDoorButtonImage = closeDoorButton.GetComponent<Image>();
         noneButtonImage = noneButton.GetComponent<Image>();
 
-        defaultColor = pushDoorButtonImage.color;
+        defaultColor = openDoorButtonImage.color;
+        */
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if (currentDoorMode == DoorMode.PULL_DOOR)
         {
-            pullDoorButtonImage.color = Color.green;
+            closeDoorButtonImage.color = Color.green;
         }
         else
         {
-            pullDoorButtonImage.color = defaultColor;
+            closeDoorButtonImage.color = defaultColor;
         }
 
         if (currentDoorMode == DoorMode.PUSH_DOOR)
         {
-            pushDoorButtonImage.color = Color.green;
+            openDoorButtonImage.color = Color.green;
         }
         else
         {
-            pushDoorButtonImage.color = defaultColor;
+            openDoorButtonImage.color = defaultColor;
         }
 
         if (currentDoorMode == DoorMode.NONE)
@@ -67,6 +75,7 @@ public class DoorMenuController : MonoBehaviour
         {
             noneButtonImage.color = defaultColor;
         }
+        */
     }
 
     public DoorMode GetCurrentMode()
@@ -77,15 +86,18 @@ public class DoorMenuController : MonoBehaviour
     private void changeToPullMode()
     {
         currentDoorMode = DoorMode.PULL_DOOR;
+        otherDoorMenuController.currentDoorMode = DoorMode.NONE;
     }
 
     private void changeToPushMode()
     {
         currentDoorMode = DoorMode.PUSH_DOOR;
+        otherDoorMenuController.currentDoorMode = DoorMode.NONE;
     }
 
     private void changeToNoneMode()
     {
         currentDoorMode = DoorMode.NONE;
+        otherDoorMenuController.currentDoorMode = DoorMode.NONE;
     }
 }

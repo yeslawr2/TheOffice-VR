@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 9015042610486984900}
   - component: {fileID: 6557005987365434382}
   - component: {fileID: 1757054812460308473}
+  - component: {fileID: 3334542487407539945}
+  - component: {fileID: 1215965045251609739}
   m_Layer: 0
   m_Name: Couch
   m_TagString: Untagged
@@ -56,7 +58,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,7 +82,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &1757054812460308473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -93,5 +93,31 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5317491, y: 1.304039, z: 3.863291}
-  m_Center: {x: -0.16467673, y: 0.04930824, z: -0.06045115}
+  m_Size: {x: 0.59708774, y: 1.304039, z: 3.863291}
+  m_Center: {x: -0.6320074, y: 0.04930824, z: -0.06045115}
+--- !u!65 &3334542487407539945
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755755320375580123}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5317491, y: 1.304039, z: 0.012963057}
+  m_Center: {x: -0.16467673, y: 0.04930824, z: -1.9856151}
+--- !u!65 &1215965045251609739
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4755755320375580123}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5317491, y: 1.304039, z: 0.027571678}
+  m_Center: {x: -0.16467673, y: 0.04930824, z: 1.8574085}

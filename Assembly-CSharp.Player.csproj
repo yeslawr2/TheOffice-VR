@@ -53,11 +53,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="PhotonVoice.API">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.API.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder">
       <HintPath>Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="PhotonUnityNetworking.Utilities">
       <HintPath>Library/ScriptAssemblies/PhotonUnityNetworking.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.PUN">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.PUN.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -70,6 +76,9 @@
     </Reference>
     <Reference Include="PhotonUnityNetworking">
       <HintPath>Library/ScriptAssemblies/PhotonUnityNetworking.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.dll</HintPath>
     </Reference>
     <Reference Include="PhotonChat">
       <HintPath>Library/ScriptAssemblies/PhotonChat.dll</HintPath>
@@ -266,6 +275,9 @@
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
       <HintPath>Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
+    <Reference Include="PhotonVoice.Editor">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -278,11 +290,17 @@
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="PhotonVoice.Utilities.Editor">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.Utilities.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="PhotonUnityNetworking.Utilities.Culling.Editor">
       <HintPath>Library/ScriptAssemblies/PhotonUnityNetworking.Utilities.Culling.Editor.dll</HintPath>
     </Reference>
     <Reference Include="PhotonUnityNetworking.Editor">
       <HintPath>Library/ScriptAssemblies/PhotonUnityNetworking.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonVoice.PUN.Editor">
+      <HintPath>Library/ScriptAssemblies/PhotonVoice.PUN.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -644,11 +662,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Character.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\Door.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\DoorAction.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\Fix_elevator_fall.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\evelator_controll.cs" />
-    <Compile Include="Assets\Enviroment\enviroment\Office building\scripts\pass_on_parent.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoObjectController6DoF.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoSeeThroughController.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerInput.cs" />
@@ -778,29 +791,37 @@
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\Scripts\AvailabilityLabelController.cs" />
     <Compile Include="Assets\Scripts\ChairController.cs" />
     <Compile Include="Assets\Scripts\ChairMenuController.cs" />
+    <Compile Include="Assets\Scripts\ChairSittingController.cs" />
     <Compile Include="Assets\Scripts\CharacterMovement.cs" />
     <Compile Include="Assets\Scripts\ConnectToServer.cs" />
     <Compile Include="Assets\Scripts\CreateAndJoinRooms.cs" />
     <Compile Include="Assets\Scripts\DoorController.cs" />
     <Compile Include="Assets\Scripts\DoorMenuController.cs" />
+    <Compile Include="Assets\Scripts\ExitOfficeMenuController.cs" />
     <Compile Include="Assets\Scripts\ExitRoomMenuController.cs" />
     <Compile Include="Assets\Scripts\ExitRoomTrigger.cs" />
     <Compile Include="Assets\Scripts\HighlightObject.cs" />
     <Compile Include="Assets\Scripts\LobbyMenuController.cs" />
+    <Compile Include="Assets\Scripts\LoginScript.cs" />
     <Compile Include="Assets\Scripts\NetworkController.cs" />
     <Compile Include="Assets\Scripts\OfficeChairController.cs" />
     <Compile Include="Assets\Scripts\PlayerMananger.cs" />
+    <Compile Include="Assets\Scripts\PresenterScreenController.cs" />
     <Compile Include="Assets\Scripts\ReserveRoomButton.cs" />
     <Compile Include="Assets\Scripts\ReserveRoomMenuController.cs" />
     <Compile Include="Assets\Scripts\RoomManager.cs" />
     <Compile Include="Assets\Scripts\ShareScreenButton.cs" />
+    <Compile Include="Assets\Scripts\ShareScreenMenuController.cs" />
     <Compile Include="Assets\Scripts\SofaController.cs" />
     <Compile Include="Assets\Scripts\SofaMenuController.cs" />
     <Compile Include="Assets\Scripts\SpawnPlayers.cs" />
     <Compile Include="Assets\Scripts\SpawnRoomDoor.cs" />
+    <Compile Include="Assets\char_color.cs" />
     <Compile Include="Assets\levelloader.cs" />
+    <Compile Include="Assets\movement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Enviroment\enviroment\Office building\Read me.txt" />
@@ -842,6 +863,23 @@
     <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\ARM\Photon.Voice.UWP.MediaExtensions.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\ARM\opus_egpv.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\ARM\webrtc-audio.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x64\Photon.Voice.UWP.MediaExtensions.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x64\opus_egpv.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x64\webrtc-audio.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x86\Photon.Voice.UWP.MediaExtensions.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x86\opus_egpv.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WSA\x86\webrtc-audio.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\WebRTC-LICENSE.txt" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\x86\AudioIn.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\x86\opus_egpv.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\x86\webrtc-audio.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\x86_64\AudioIn.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\x86_64\opus_egpv.dll" />
+    <None Include="Assets\Photon\PhotonVoice\PhotonVoiceLibs\x86_64\webrtc-audio.dll" />
+    <None Include="Assets\Photon\PhotonVoice\changes-voice.txt" />
     <None Include="Assets\QuickOutline\Readme.txt" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
     <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />

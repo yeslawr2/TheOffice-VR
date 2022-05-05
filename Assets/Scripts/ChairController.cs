@@ -56,7 +56,8 @@ public class ChairController : MonoBehaviour
                         {
                             //gameObject.transform.Translate(0.0f, 0.0f, -0.01f);
                             MoveChair(-0.05f);
-                            currentMoveDistance -= 0.05f;
+                            //currentMoveDistance -= 0.05f;
+                            pvComponent.RPC("RPC_UpdateMoveDistance", RpcTarget.All, -0.05f);
                         }
                     }
                     else
@@ -65,7 +66,8 @@ public class ChairController : MonoBehaviour
                         {
                             //gameObject.transform.Translate(0.0f, 0.0f, 0.01f);
                             MoveChair(0.05f);
-                            currentMoveDistance += 0.05f;
+                            //currentMoveDistance += 0.05f;
+                            pvComponent.RPC("RPC_UpdateMoveDistance", RpcTarget.All, 0.05f);
                         }
                     }
                 }
@@ -75,16 +77,20 @@ public class ChairController : MonoBehaviour
                     {
                         if (currentRotateDistance > minRotateDistance)
                         {
-                            gameObject.transform.Rotate(0.0f, 0.5f, 0.0f);
-                            currentRotateDistance -= 0.5f;
+                            //gameObject.transform.Rotate(0.0f, 0.5f, 0.0f);
+                            RotateChair(0.5f);
+                            //currentRotateDistance -= 0.5f;
+                            pvComponent.RPC("RPC_UpdateRotateDistance", RpcTarget.All, -0.5f);
                         }
                     }
                     else
                     {
                         if (currentRotateDistance < maxRotateDistance)
                         {
-                            gameObject.transform.Rotate(0.0f, -0.5f, 0.0f);
-                            currentRotateDistance += 0.5f;
+                            //gameObject.transform.Rotate(0.0f, -0.5f, 0.0f);
+                            RotateChair(-0.5f);
+                            //currentRotateDistance += 0.5f;
+                            pvComponent.RPC("RPC_UpdateRotateDistance", RpcTarget.All, 0.5f);
                         }
                     }
                 }
@@ -99,12 +105,30 @@ public class ChairController : MonoBehaviour
 
     void RotateChair(float angle)
     {
-
+        pvComponent.RPC("RPC_RotateChair", RpcTarget.All, angle);
     }
 
     [PunRPC]
     void RPC_MoveChair(float distance)
     {
         gameObject.transform.Translate(0.0f, 0.0f, distance);
+    }
+
+    [PunRPC]
+    void RPC_RotateChair(float angle)
+    {
+        gameObject.transform.Rotate(0.0f, angle, 0.0f);
+    }
+
+    [PunRPC]
+    void RPC_UpdateMoveDistance(float distance)
+    {
+        currentMoveDistance += distance;
+    }
+
+    [PunRPC]
+    void RPC_UpdateRotateDistance(float angle)
+    {
+        currentRotateDistance += angle;
     }
 }

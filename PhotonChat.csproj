@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AB15C635-EDA8-2020-0F15-FEA675274B97}</ProjectGuid>
+    <ProjectGuid>{88B57C96-FC6F-F4D0-348B-770F068DDE07}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PhotonChat</AssemblyName>
@@ -275,13 +275,13 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/Steven/Documents/GitHub/TheOffice-VR/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/Steven/Documents/UTD - Coursework/Spring 2022/CS 6334/Project/Files/TheOffice-VR-2 - Copy/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -637,11 +637,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{7AEF630F-692A-7FA5-4234-7DE1D68AEE6D}</Project>
+      <Project>{38E85BE5-79EC-4F1A-183E-663AF344BE9E}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{5E0616E1-7C11-7378-B813-644CC6470F7B}</Project>
+      <Project>{2B0EF369-A0E7-81E7-A478-61A7968A2176}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>

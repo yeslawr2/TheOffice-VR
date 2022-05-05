@@ -10,12 +10,22 @@ public class CharacterMovement : MonoBehaviour
     private CharacterController characterControllerComponent;
     private PhotonView photonViewComponent;
 
+    private bool isControllable;
+
     // Start is called before the first frame update
     void Start()
     {
         characterControllerComponent = GetComponent<CharacterController>();
         photonViewComponent = GetComponent<PhotonView>();
 
+        if (isControllable)
+        {
+            childCamera.gameObject.SetActive(true);
+        }
+        else
+        {
+            childCamera.gameObject.SetActive(false);
+        }
         //childCamera.gameObject.GetComponent<Camera>().enabled = true;
         
     }
@@ -34,5 +44,10 @@ public class CharacterMovement : MonoBehaviour
             velocity.y -= 10.0f;
             characterControllerComponent.Move(velocity * Time.deltaTime);
         }
+    }
+
+    public void setControllable(bool value)
+    {
+        isControllable = value;
     }
 }

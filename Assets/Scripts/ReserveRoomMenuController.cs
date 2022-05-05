@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class ReserveRoomMenuController : MonoBehaviour
 {
     [SerializeField] private Button YesButton;
     [SerializeField] private Button NoButton;
+
+    private PhotonView pvComponent;
 
     private bool reserveRoom;
 
@@ -16,6 +19,8 @@ public class ReserveRoomMenuController : MonoBehaviour
         reserveRoom = false;
         YesButton.onClick.AddListener(reserveTheRoom);
         NoButton.onClick.AddListener(unreserveTheRoom);
+
+        pvComponent = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
@@ -26,12 +31,20 @@ public class ReserveRoomMenuController : MonoBehaviour
 
     private void reserveTheRoom()
     {
-        reserveRoom = true;
+        //reserveRoom = true;
+        pvComponent.RPC("RPC_ReserveRoom", RpcTarget.All, true);
     }
 
     private void unreserveTheRoom()
     {
-        reserveRoom = false;
+        //reserveRoom = false;
+        pvComponent.RPC("RPC_ReserveRoom", RpcTarget.All, false);
+    }
+
+    [PunRPC]
+    void RPC_ReserveRoom(bool reserved)
+    {
+        reserveRoom = reserved;
     }
 
     public bool IsRoomReserved()
